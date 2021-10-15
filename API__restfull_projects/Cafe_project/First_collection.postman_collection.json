@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "0ef06507-bcc0-4e62-a23b-5800964d5a6e",
+		"name": "First_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Folder Get",
+			"item": [
+				{
+					"name": "Get all cafe",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/all",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Select random_cafe",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/random_cafe",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"random_cafe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get cafe with a specific location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/search?loc=Clerkenwell",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "loc",
+									"value": "Clerkenwell"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Folder Post",
+			"item": [
+				{
+					"name": "add cafe",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Cafe in Paris",
+									"type": "text"
+								},
+								{
+									"key": "map_url",
+									"value": "https://goo.gl/maps/dwaTMSimJURuipja8",
+									"type": "text"
+								},
+								{
+									"key": "img_url",
+									"value": "https://www.google.fr/maps/place/Caf%C3%A9+In/@48.8404396,2.392127,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMVKQ_AW2sZRPKKeWLMHkigij08KPs5oTDSxTfQ!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMVKQ_AW2sZRPKKeWLMHkigij08KPs5oTDSxTfQ%3Dw327-h100-k-no!7i10896!8i3328!4m11!1m2!2m1!1scaf%C3%A9+in+paris!3m7!1s0x47e6726c75e1fadd:0x8e5aa65f3461445c!8m2!3d48.8402702!4d2.3921095!14m1!1BCgIgAQ!15sCg5jYWbDqSBpbiBwYXJpc1oQIg5jYWbDqSBpbiBwYXJpc5IBA2Jhcg#",
+									"type": "text"
+								},
+								{
+									"key": "loc",
+									"value": "Paris",
+									"type": "text"
+								},
+								{
+									"key": "sockets",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "toilet",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "wifi",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "calls",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "seats",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "coffe_price",
+									"value": "3.5",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Folder Patch",
+			"item": [
+				{
+					"name": "Update a cafe",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/update-price/2?coffee_price=$3.9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"update-price",
+								"2"
+							],
+							"query": [
+								{
+									"key": "coffee_price",
+									"value": "$3.9"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "New Delete",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
