@@ -1,1 +1,1 @@
-The goal of this project is to create an API which is collecting data on all the cafes in a particular city and figured out which ones were suitable for remote-work? Then charge people to access my data if I want.
+The objective of this project is to create an API which is collecting data on all the cafes in a particular city and figured out which ones were suitable for remote-work? Then charge people to access my data if I want
